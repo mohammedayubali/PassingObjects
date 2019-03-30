@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/studentinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Student Information" />
+
+    <TextView
+        android:id="@+id/sid_txtv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/studentinfo"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        android:text="Student id " />
+
+    <EditText
+        android:id="@+id/sid_edttxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/studentinfo"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/sid_txtv"
+        android:ems="10"
+        android:hint="enter student id "
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp" />
+
+    <TextView
+        android:id="@+id/sname_txtv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sid_txtv"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Student Name" />
+
+    <EditText
+        android:id="@+id/sname_edttxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sid_edttxt"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@+id/sname_txtv"
+        android:ems="10"
+        android:hint="Enter student name "
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/Gender_txtv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sname_txtv"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:text="Gender" />
+
+    <TextView
+        android:id="@+id/sub5_txtv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/grnderbtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Marks of 5 Subjects" />
+
+    <EditText
+        android:id="@+id/marks1_edttxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sub5_txtv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="enter number 1"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/marks2_edttxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/marks1_edttxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="enter marks 2"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/marks3_edttxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/marks2_edttxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="enter marks 3"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/marks4_edttxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/marks3_edttxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="enter marks 4"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/marks5_edttxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/marks4_edttxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="enter marks 5"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/calculatebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/marks5_edttxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="Calculate" />
+
+    <RadioGroup
+        android:id="@+id/grnderbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sname_edttxt"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@+id/Gender_txtv"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radiobtn_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/radiobtn_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Female" />
+
+    </RadioGroup>
+
+</RelativeLayout>
